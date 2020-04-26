@@ -17,11 +17,12 @@ import java.util.List;
 @AllArgsConstructor
 public class CourseDto {
     Long id;
-    String courseName;
-    String content;
-
-
-    String courseId;
+    String activityId;
+    String activityName;
+    String semester;
+    String academic;
+    String participant;
+    String credit;
     LecturerDto lecturer;
     List<StudentDto> students = new ArrayList<>();
 

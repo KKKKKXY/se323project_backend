@@ -12,7 +12,7 @@ import se331.lab.rest.entity.Student;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-04-26T15:50:09+0700",
+    date = "2020-04-26T19:51:09+0700",
     comments = "version: 1.3.0.Final, compiler: javac, environment: Java 11.0.6 (JetBrains s.r.o)"
 )
 public class MapperUtilImpl implements MapperUtil {
@@ -88,9 +88,12 @@ public class MapperUtilImpl implements MapperUtil {
         CourseDto courseDto = new CourseDto();
 
         courseDto.setId( course.getId() );
-        courseDto.setCourseName( course.getCourseName() );
-        courseDto.setContent( course.getContent() );
-        courseDto.setCourseId( course.getCourseId() );
+        courseDto.setActivityId( course.getActivityId() );
+        courseDto.setActivityName( course.getActivityName() );
+        courseDto.setSemester( course.getSemester() );
+        courseDto.setAcademic( course.getAcademic() );
+        courseDto.setParticipant( course.getParticipant() );
+        courseDto.setCredit( course.getCredit() );
         courseDto.setLecturer( getLecturerDto( course.getLecturer() ) );
         courseDto.setStudents( getStudentDto( course.getStudents() ) );
 

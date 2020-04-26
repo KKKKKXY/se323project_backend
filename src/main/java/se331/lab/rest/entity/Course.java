@@ -16,9 +16,12 @@ public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
-    String courseId;
-    String courseName;
-    String content;
+    String activityId;
+    String activityName;
+    String semester;
+    String academic;
+    String participant;
+    String credit;
     @ManyToOne
     @JsonBackReference
     Lecturer lecturer;

@@ -93,24 +93,36 @@ public class DataLoader implements ApplicationRunner {
         lecturer2 = this.lecturerRepository.save(lecturer2);
         lecturer3 = this.lecturerRepository.save(lecturer3);
         Course course1 = Course.builder()
-                .courseId("953331")
-                .courseName("Component Based Software Dev")
-                .content("Nothing just for fun")
+                .activityId("953331")
+                .activityName("Component Based Software Dev")
+                .semester("1")
+                .academic("2020")
+                .participant("100")
+                .credit("5")
                 .build();
         Course course2 = Course.builder()
-                .courseId("953xxx")
-                .courseName("X project")
-                .content("Do not know what to study")
+                .activityId("953xxx")
+                .activityName("X project")
+                .semester("1")
+                .academic("2020")
+                .participant("100")
+                .credit("5")
                 .build();
         Course course3 = Course.builder()
-                .courseId("953494")
-                .courseName("Selected Topics in SE 1")
-                .content("Python and Data mining Development")
+                .activityId("953494")
+                .activityName("Selected Topics in SE 1")
+                .semester("2")
+                .academic("2020")
+                .participant("50")
+                .credit("10")
                 .build();
         Course course4 = Course.builder()
-                .courseId("953234")
-                .courseName("Advance Software Development")
-                .content("The course for the smart students ")
+                .activityId("953234")
+                .activityName("Advance Software Development")
+                .semester("2")
+                .academic("2020")
+                .participant("60")
+                .credit("10")
                 .build();
 
         course1 = this.courseRepository.save(course1);
