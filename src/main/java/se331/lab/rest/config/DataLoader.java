@@ -142,28 +142,37 @@ public class DataLoader implements ApplicationRunner {
 
         student1.getEnrolledCourses().add(course1);
         course1.getStudents().add(student1);
-        student1.getEnrolledCourses().add(course2);
-        course2.getStudents().add(student1);
-        student2.getEnrolledCourses().add(course1);
-        course1.getStudents().add(student2);
-        student3.getEnrolledCourses().add(course2);
-        course2.getStudents().add(student3);
-        course3.getStudents().add(student4);
-        course3.getStudents().add(student5);
-        course3.getStudents().add(student1);
-        student1.getEnrolledCourses().add(course3);
-        student4.getEnrolledCourses().add(course3);
-        student5.getEnrolledCourses().add(course3);
-        course4.getStudents().add(student1);
-        course4.getStudents().add(student2);
-        course4.getStudents().add(student3);
-        course4.getStudents().add(student4);
-        course4.getStudents().add(student5);
-        student1.getEnrolledCourses().add(course4);
-        student2.getEnrolledCourses().add(course4);
-        student3.getEnrolledCourses().add(course4);
-        student4.getEnrolledCourses().add(course4);
-        student5.getEnrolledCourses().add(course4);
+
+        student2.getEnrolledCourses().add(course2);
+        course2.getStudents().add(student2);
+
+        student3.getEnrolledCourses().add(course3);
+        course3.getStudents().add(student3);
+
+//        student1.getEnrolledCourses().add(course1);
+//        course1.getStudents().add(student1);
+//        student1.getEnrolledCourses().add(course2);
+//        course2.getStudents().add(student1);
+//        student2.getEnrolledCourses().add(course1);
+//        course1.getStudents().add(student2);
+//        student3.getEnrolledCourses().add(course2);
+//        course2.getStudents().add(student3);
+//        course3.getStudents().add(student4);
+//        course3.getStudents().add(student5);
+//        course3.getStudents().add(student1);
+//        student1.getEnrolledCourses().add(course3);
+//        student4.getEnrolledCourses().add(course3);
+//        student5.getEnrolledCourses().add(course3);
+//        course4.getStudents().add(student1);
+//        course4.getStudents().add(student2);
+//        course4.getStudents().add(student3);
+//        course4.getStudents().add(student4);
+//        course4.getStudents().add(student5);
+//        student1.getEnrolledCourses().add(course4);
+//        student2.getEnrolledCourses().add(course4);
+//        student3.getEnrolledCourses().add(course4);
+//        student4.getEnrolledCourses().add(course4);
+//        student5.getEnrolledCourses().add(course4);
 
 
         course1.setLecturer(lecturer2);
