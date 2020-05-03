@@ -142,6 +142,8 @@ public class DataLoader implements ApplicationRunner {
 
         student1.getEnrolledCourses().add(course1);
         course1.getStudents().add(student1);
+        student1.getEnrolledCourses().add(course2);
+        course2.getStudents().add(student1);
 
         student2.getEnrolledCourses().add(course2);
         course2.getStudents().add(student2);
